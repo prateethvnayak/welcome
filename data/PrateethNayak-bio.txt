@@ -1,6 +1,7 @@
-Prateeth Nayak is a computer scientist at SRI Intl., where he works on
+Prateeth Nayak is a ML-Engineer working on the Speech Invocation stack at Siri, Apple Inc.
+Previously, he was a computer scientist at SRI Intl., where he worked on
 cross-disciplinary machine learning & deep learning. He received a Masters
 in Electrical & Comp. Engineering from the University of Minnesota, Twin Cities
-in 2019, and he received a Bachelors in Computer Science from the Visvesvaraya
-Technological University in 2017. He also part of Prof. Mingyi Hong group at UMN
+in 2019, and he received a Bachelors in Electronics & Computer Science from the Visvesvaraya
+Technological University in 2017. He was also part of Prof. Mingyi Hong group at UMN
 contributing to multiple projects during his Masters.
