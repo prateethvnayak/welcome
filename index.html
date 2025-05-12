@@ -27,9 +27,8 @@
                   <p style="text-align:center">
                     <name>Prateeth Nayak</name>
                   </p>
-                  <p>I am currently a ML-Engineer at <a href="https://www.apple.com/siri/">Apple Inc.</a>, where I am
-                    involved in scaling
-                    and optimization of Siri invocation stack involving ML-algorithms across all Apple Devices.
+                  <p>I am currently a Senior ML-Engineer at Apple Inc., where I am
+                    involved in improving, scaling and optimizing of <a href="https://machinelearning.apple.com/research/voice-trigger"></a>Voice Trigger System for Siri</a> across all Apple Devices.
                   </p>
                   <p>
                     Previously, I was a researcher/computer-scientist at <a href="https://www.sri.com/">Stanford
@@ -42,20 +41,14 @@
                       href="https://arxiv.org/abs/2003.07344">DASL</a>.
                   </p>
                   <p>
-                    I completed my Masters at <a href="https://ece.umn.edu/">Univ. of Minnesota, Twin Cities</a> and was
-                    a
-                    part of <a href="https://people.ece.umn.edu/~mhong/mingyi.html">Prof.Mingyi Hong</a> group. I
-                    completed my
-                    bachelors at <a href="https://vtu.ac.in/en/">Visves. Tech. University, IND</a>.
+                    I completed my Masters at Univ. of Minnesota, Twin Cities and was
+                    a part of <a href="https://people.ece.umn.edu/~mhong/mingyi.html">Prof. Mingyi H.</a> research group.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:prateethvnayak@gmail.com">Email</a> &nbsp/&nbsp
                     <!-- <a href="data/PrateethNayak-CV.pdf">CV</a> &nbsp/&nbsp -->
                     <a href="data/PrateethNayak-bio.txt">Bio</a> &nbsp/&nbsp
                     <a href="https://scholar.google.com/citations?user=SpoD9_QAAAAJ&hl=en">Google Scholar</a>
-                    &nbsp/&nbsp
-                    <a href="https://twitter.com/teethcode">Twitter</a> &nbsp/&nbsp
-                    <a href="https://github.com/prateethvnayak/">Github</a>
                   </p>
                 </td>
                 <td style="padding:2.5%;width:40%;max-width:40%">
@@ -73,10 +66,15 @@
                   <heading>Updates</heading>
                   <p>
                   <ul>
-                    <li><span style="font-weight: bold;">[Feb 2022]</span>
-                      Preprint of work "Improving Voice Trigger Detection via Metric Learning" available. <a
-                        href="https://arxiv.org/abs/2204.02455">preprint</a>
-                    </li>
+                    <li><span style="font-weight: bold;">[June 2024]</span>
+                      Work on new learning technique & architecture for keyword-spotting "RepCNN: Micro-sized, Mighty Models for Wakeword Detection" accepted at InterSpeech'24.<a
+                        href="https://machinelearning.apple.com/research/repcnn-micro">paper</a>
+                    <li><span style="font-weight: bold;">[June 2023]</span>
+                      Work on Voice-Trigger Mitigation model "Audio-to-Intent Using Acoustic-Textual Subword Representations from End-to-End ASR" accepted at ICASSP'23.<a
+                        href="https://ieeexplore.ieee.org/document/10096510">paper</a>
+                    <li><span style="font-weight: bold;">[Sept 2022]</span>
+                      Work on personalized Voice-Trigger "Improving Voice Trigger Detection via Metric Learning" accepted at InterSpeech'22.<a
+                        href="https://www.isca-archive.org/interspeech_2022/nayak22_interspeech.html">paper</a>
                     <li><span style="font-weight: bold;">[Apr 2021]</span>
                       Joined Apple Inc. as ML Engineer at Siri !
                     </li>
@@ -111,9 +109,8 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
                   <p>
-                    I'm interested in applied machine learning, optimization, computer vision, model
-                    quantization/pruning.
-                    I delve much into cross-disciplinary projects and these are some of my contributions.
+                    I'm interested in applied research on Model Quantization/Pruning, Foundation Model optimizations, and on-device ML.
+                    I delve much into cross-disciplinary projects.
                   </p>
                 </td>
               </tr>
@@ -122,6 +119,41 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <tr onmouseout="rep_stop()" onmouseover="rep_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='rep'>
+                      <img src='images/repcnn1.png' width="180">
+                    </div>
+                    <img src='images/repcnn2.png' width="180">
+                  </div>
+                  <script type="text/javascript">
+                    function rep_start() {
+                      document.getElementById('rep').style.opacity = "0";
+                    }
+                    function rep_stop() {
+                      document.getElementById('rep').style.opacity = "1";
+                    }
+                    rep_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://machinelearning.apple.com/research/repcnn-micro">
+                    <papertitle>RepCNN: Micro-sized, Mighty Models for Wakeword Detection</papertitle>
+                  </a>
+                  <br>
+                  <strong>Prateeth Nayak</strong>,
+                  <a href="">Arnav Kundu</a>,
+                  <a href="">et. al.</a>,<br>
+                  <em>arXiv</em>, InterSpeech 2024
+                  <p>We introduce a new architecture and approach to training a model for keyword detection for 
+                    very low compute and memory hardware. This involves the trick of over-parameterizing the model
+                    during training and re-parameterizing during inference resulting in 2x lesser peak memory usage
+                    10x faster runtime on-device.
+                  </p>
+                </td>
+              </tr>
 
               <tr onmouseout="voce_stop()" onmouseover="voce_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -153,7 +185,7 @@
                   <strong>Prateeth Nayak</strong>,
                   <a href="">Takuya Higuchi</a>,
                   <a href="">et. al.</a>,<br>
-                  <em>arXiv</em>, 2022 [Submitted to InterSpeech 2022]
+                  <em>arXiv</em>, InterSpeech 2022
                   <p>We improve the voice trigger detection performance of smartphone assistant using small
                     number of utterances from target speaker in a multi-task learning framework to output a
                     personalized embedding for each utterance.
@@ -200,54 +232,6 @@
                   </p>
                 </td>
               </tr>
-
-
-              <tr onmouseout="nerd_stop()" onmouseover="nerd_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='nerd_image'>
-                      <img src='images/zhot1.png' width="180">
-                    </div>
-                    <img src='images/zhot2.png' width="180">
-                  </div>
-                  <script type="text/javascript">
-                    function nerd_start() {
-                      document.getElementById('nerd_image').style.opacity = "0";
-                    }
-
-                    function nerd_stop() {
-                      document.getElementById('nerd_image').style.opacity = "1";
-                    }
-                    nerd_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2011.10889.pdf">
-                    <papertitle>Zero-Shot Learning with Knowledge Enhanced Visual Semantic Embeddings</papertitle>
-                  </a>
-                  <br>
-
-                  <a href="https://ksikka.com/">Karan Sikka</a>,
-                  <a href="https://scholar.google.com/citations?user=iRGVq0IAAAAJ&hl=en">Jihua Huang</a>,
-                  <a href="https://scholar.google.com/citations?user=B2w2EI8AAAAJ&hl=en">Andrew Silberfarb</a>,
-                  <strong>Prateeth Nayak</strong>,
-                  <a href="">Luke Rohrer</a>,
-                  <a href="">Pritish Sahu</a>
-                  <a href="https://www.sri.com/bios/john-byrnes/">John Byrnes</a>,
-                  <a href="https://www.sri.com/bios/ajay-divakaran/">Ajay Divakaran</a>,
-                  <a href="https://www.linkedin.com/in/richardrohwer/">Richard Rohwer</a>,
-                  <br>
-                  <em>arXiv</em>, 2020 [Submitted to CVPR 2021]
-                  <br>
-                  <p>
-                    We propose Common-Sense based Neuro-Symbolic Loss (CSNL) that formulates prior knowledge as novel
-                    neuro-symbolic loss functions that regularize visual-semantic embedding. CSNL forces visual features
-                    in the VSE to obey common-sense rules relating to hypernyms and attributes. This uses the <a
-                      href="https://arxiv.org/abs/2003.07344">DASL</a> framework.
-                  </p>
-                </td>
-              </tr>
-
 
               <tr onmouseout="bitef_stop()" onmouseover="bitef_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -328,16 +312,6 @@
                       data obtained from wearable devices of Chronic-Pain patients to find correlation between the
                       physiological signals and reported pain scores.
                     </li>
-                    <br>
-                    <li><span span style="font-weight: bold;">Aindra Systems, Bangalore, IND</span> [Feb'17 -
-                      Jun'17]<br>
-                      <em>Engineering Intern</em><br>
-                      First taste of Machine-Learning & Deep Learning domain while working with R&D engineers on
-                      detection of cervical
-                      cancerous cells in high-res pap smear images. Contributed parts of the pipeline mainly focused on
-                      image processing algorithms for robust segmentation of cell nuclei.
-                    </li>
-                    <br>
                   </ul>
                   </p>
                 </td>
@@ -347,7 +321,7 @@
 
 
           <a href="pages/moments.html">
-            <p style="font-size:18px">Checkout Moments, Hobbies and People in my Life !</p>
+            <p style="font-size:16px">Outside of work ...</p>
           </a>
 
           <p>
